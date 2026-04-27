@@ -1,2 +1,7 @@
 /venv
 /clean_data.csv
+
+.python-version
+*.csv
+
+*pycache*
