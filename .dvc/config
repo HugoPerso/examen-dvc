@@ -1,4 +1,4 @@
 [core]
     remote = remote_storage
 ['remote "remote_storage"']
-    url = ../dvc_remote
+    url = https://dagshub.com/HugoPerso/examen-dvc.dvc
