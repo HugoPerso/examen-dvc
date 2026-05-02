@@ -3,5 +3,6 @@
 
 .python-version
 *.csv
+*.pkl
 
 *pycache*
