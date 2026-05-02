@@ -36,3 +36,7 @@ def evaluate_model(data_path: str, model_path: str) -> None:
     results = pd.DataFrame({"y_test": y_test.iloc[:, 0], "y_pred": y_pred})
     results.to_csv("data/predictions.csv", index=False)
     print("Prédictions sauvegardées dans data/predictions.csv")
+
+
+if __name__ == "__main__":
+    evaluate_model("data/processed_data/", "models/")

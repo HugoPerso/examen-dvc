@@ -15,3 +15,7 @@ def split_data(source_path: str, dest_path: str) -> None:
     pd.DataFrame(X_test).to_csv(dest_path + "X_test.csv", index=False)
     pd.DataFrame(y_train).to_csv(dest_path + "y_train.csv", index=False)
     pd.DataFrame(y_test).to_csv(dest_path + "y_test.csv", index=False)
+
+
+if __name__ == "__main__":
+    split_data("data/raw_data/raw.csv", "data/processed_data/")

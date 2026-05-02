@@ -25,3 +25,7 @@ def train_model(data_path: str, model_path: str) -> None:
     with open(model_path + "xgb_model.pkl", "wb") as f:
         pickle.dump(model, f)
     print("Modèle entraîné et sauvegardé dans 'xgb_model.pkl'")
+
+
+if __name__ == "__main__":
+    train_model("data/processed_data/", "models/")

@@ -15,3 +15,7 @@ def normalize_data(path: str) -> None:
     pd.DataFrame(X_test_scaled, columns=X_test.columns).to_csv(
         path + "X_test_scaled.csv", index=False
     )
+
+
+if __name__ == "__main__":
+    normalize_data("data/processed_data/")

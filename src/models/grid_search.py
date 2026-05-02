@@ -25,3 +25,12 @@ def grid_search(data_path: str, model_path: str, param_grid: dict) -> None:
     with open(model_path + "best_params.pkl", "wb") as f:
         pickle.dump(grid_search.best_params_, f)
     print(f"Meilleurs paramètres trouvés : {grid_search.best_params_}")
+
+
+if __name__ == "__main__":
+    param_grid = {
+        "n_estimators": [100, 200],
+        "max_depth": [3, 5],
+        "learning_rate": [0.01, 0.1],
+    }
+    grid_search("data/processed_data/", "models/", param_grid)
